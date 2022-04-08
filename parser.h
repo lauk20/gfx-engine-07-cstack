@@ -5,10 +5,10 @@
 #include "ml6.h"
 #include "stack.h"
 
-void parse_file ( char * filename, 
-                  struct stack * csystems,
+void parse_file ( char * filename,
+                  struct matrix * transform,
                   struct matrix * edges,
-                  struct matrix * polygons,
+                  struct stack * polygons,
                   screen s);
 
 #endif

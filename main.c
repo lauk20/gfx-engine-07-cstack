@@ -8,7 +8,6 @@
 #include "draw.h"
 #include "matrix.h"
 #include "parser.h"
-#include "stack.h"
 
 int main(int argc, char **argv) {
 
@@ -20,10 +19,12 @@ int main(int argc, char **argv) {
   edges = new_matrix(4, 4);
   polygons = new_matrix(4, 4);
   csystems = new_stack();
+  //transform = new_matrix(4, 4);
+
   if ( argc == 2 )
-    parse_file( argv[1], csystems, edges, polygons, s );
+    parse_file( argv[1], edges, polygons, csystems, s );
   else
-    parse_file( "stdin", csystems, edges, polygons, s );
+    parse_file( "stdin", edges, polygons, csystems, s );
 
   free_matrix( edges );
   free_matrix( polygons );
