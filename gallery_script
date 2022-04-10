@@ -1,0 +1,40 @@
+push
+move
+300 51 0
+push
+rotate
+y 60
+push
+rotate
+x 30
+box
+0 0 0 50 50 50
+box
+200 0 0 50 50 50
+box
+-200 0 0 50 50 50
+box
+-400 0 0 50 50 50
+push
+rotate
+x -60
+box
+-175 225 0 50 50 50
+box
+225 225 0 50 50 50
+pop
+pop
+pop
+pop
+push
+move
+250 350 0
+push
+rotate
+y 60
+rotate
+x 30
+box
+-25 25 0 50 50 50
+save
+gallery.png
